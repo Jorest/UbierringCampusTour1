@@ -1,170 +1,163 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Rundgang SGB Final</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-    <style>
-        @-ms-viewport {
-            width: device-width;
-        }
-    </style>
-    <link rel="stylesheet" href="vendor/reset.min.css">
-    <link rel="stylesheet" href="style.css">
+<title>Rundgang SGB Final2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body class="multiple-scenes ">
 
-    <div id="pano"></div>
+<div id="pano"></div>
 
-    <div id="sceneList">
-        <ul class="scenes">
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-eingang">
+        <li class="text">Eingang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-seminarraum">
+        <li class="text">Seminarraum</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-teekche">
+        <li class="text">Teeküche</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-seminarraum-ausgang">
+        <li class="text">Seminarraum Ausgang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-bachelor-eingang">
+        <li class="text">Bachelor-Eingang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-bachelor-1">
+        <li class="text">Bachelor 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-bachelor-2">
+        <li class="text">Bachelor 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-bachelor-3">
+        <li class="text">Bachelor 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-bachelor-ausgang">
+        <li class="text">Bachelor Ausgang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-bachelorraum-mit-klimakammer-eingang">
+        <li class="text">Bachelorraum mit Klimakammer Eingang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-bachelorraum-mit-klimakammer">
+        <li class="text">Bachelorraum mit Klimakammer</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-bachelorraum-mit-klimakammer-ausgang">
+        <li class="text">Bachelorraum mit Klimakammer Ausgang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-poster-von-den-abschlussarbeiten">
+        <li class="text">Poster von den Abschlussarbeiten</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-bros">
+        <li class="text">Büros</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-nassraum-eingang">
+        <li class="text">Nassraum Eingang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-nassraum">
+        <li class="text">Nassraum</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-nassraum-ausgang">
+        <li class="text">Nassraum Ausgang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-labor-eingang">
+        <li class="text">Labor Eingang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-labor">
+        <li class="text">Labor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-labor-ausgang">
+        <li class="text">Labor Ausgang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-die-letzte-etappe">
+        <li class="text">Die letzte Etappe</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-fotoraum">
+        <li class="text">Fotoraum</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-reproanlage">
+        <li class="text">Reproanlage</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-ende-des-rundganges">
+        <li class="text">Ende des Rundganges</li>
+      </a>
+    
+  </ul>
+</div>
 
-            <a href="javascript:void(0)" class="scene" data-id="0-eingang">
-                <li class="text">Eingang</li>
-            </a>
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
 
-            <a href="javascript:void(0)" class="scene" data-id="1-seminarraum">
-                <li class="text">Seminarraum</li>
-            </a>
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
 
-            <a href="javascript:void(0)" class="scene" data-id="2-teekche">
-                <li class="text">Teeküche</li>
-            </a>
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
 
-            <a href="javascript:void(0)" class="scene" data-id="3-seminarraum-ausgang">
-                <li class="text">Seminarraum Ausgang</li>
-            </a>
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
 
-            <a href="javascript:void(0)" class="scene" data-id="4-bachelor-eingang">
-                <li class="text">Bachelor-Eingang</li>
-            </a>
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
 
-            <a href="javascript:void(0)" class="scene" data-id="5-bachelor-1">
-                <li class="text">Bachelor 1</li>
-            </a>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
 
-            <a href="javascript:void(0)" class="scene" data-id="6-bachelor-2">
-                <li class="text">Bachelor 2</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="7-bachelor-3">
-                <li class="text">Bachelor 3</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="8-bachelor-ausgang">
-                <li class="text">Bachelor Ausgang</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="9-bachelorraum-mit-klimakammer-eingang">
-                <li class="text">Bachelorraum mit Klimakammer Eingang</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="10-bachelorraum-mit-klimakammer">
-                <li class="text">Bachelorraum mit Klimakammer</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="11-bachelorraum-mit-klimakammer-ausgang">
-                <li class="text">Bachelorraum mit Klimakammer Ausgang</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="12-poster-von-den-abschlussarbeiten">
-                <li class="text">Poster von den Abschlussarbeiten</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="13-bros">
-                <li class="text">Büros</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="14-nassraum-eingang">
-                <li class="text">Nassraum Eingang</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="15-nassraum">
-                <li class="text">Nassraum</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="16-nassraum-ausgang">
-                <li class="text">Nassraum Ausgang</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="17-labor-eingang">
-                <li class="text">Labor Eingang</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="18-labor">
-                <li class="text">Labor</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="19-labor-ausgang">
-                <li class="text">Labor Ausgang</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="20-die-letzte-etappe">
-                <li class="text">Die letzte Etappe</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="21-fotoraum">
-                <li class="text">Fotoraum</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="22-reproanlage">
-                <li class="text">Reproanlage</li>
-            </a>
-
-            <a href="javascript:void(0)" class="scene" data-id="23-ende-des-rundganges">
-                <li class="text">Ende des Rundganges</li>
-            </a>
-
-        </ul>
-    </div>
-
-    <div id="titleBar">
-        <h1 class="sceneName"></h1>
-    </div>
-
-    <a href="javascript:void(0)" id="autorotateToggle">
-        <img class="icon off" src="img/play.png">
-        <img class="icon on" src="img/pause.png">
-    </a>
-
-    <a href="javascript:void(0)" id="fullscreenToggle">
-        <img class="icon off" src="img/fullscreen.png">
-        <img class="icon on" src="img/windowed.png">
-    </a>
-
-    <a href="javascript:void(0)" id="sceneListToggle">
-        <img class="icon off" src="img/expand.png">
-        <img class="icon on" src="img/collapse.png">
-    </a>
-
-    <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-        <img class="icon" src="img/up.png">
-    </a>
-    <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-        <img class="icon" src="img/down.png">
-    </a>
-    <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-        <img class="icon" src="img/left.png">
-    </a>
-    <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-        <img class="icon" src="img/right.png">
-    </a>
-    <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-        <img class="icon" src="img/plus.png">
-    </a>
-    <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-        <img class="icon" src="img/minus.png">
-    </a>
-
-    <script src="vendor/screenfull.min.js"></script>
-    <script src="vendor/bowser.min.js"></script>
-    <script src="vendor/marzipano.js"></script>
-
-    <script src="data.js"></script>
-    <script src="index.js"></script>
+<script src="data.js"></script>
+<script src="index.js"></script>
 
 </body>
-
 </html>
