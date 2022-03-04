@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rundgang HOM Final2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <style>
+        @-ms-viewport {
+            width: device-width;
+        }
+    </style>
+    <link rel="stylesheet" href="vendor/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="multiple-scenes ">
+
+    <div id="pano"></div>
+
+    <div id="sceneList">
+        <ul class="scenes">
+
+            <a href="javascript:void(0)" class="scene" data-id="0-eingang">
+                <li class="text">Eingang</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="1-untersuchung-mikroskopie">
+                <li class="text">Untersuchung Mikroskopie</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="2-schaukasten-fotoapparate">
+                <li class="text">Schaukasten Fotoapparate</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="3-fotodokumentation">
+                <li class="text">Fotodokumentation</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="4-seminarraum">
+                <li class="text">Seminarraum</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="5-kastensarg">
+                <li class="text">Kastensarg</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="6-digestorium">
+                <li class="text">Digestorium</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="7-sicherheitsschrank">
+                <li class="text">Sicherheitsschrank</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="8-sammlung-lacktafeln">
+                <li class="text">Sammlung Lacktafeln</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="9-vitrinen-materialsammlung">
+                <li class="text">Vitrinen Materialsammlung</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="10-laborzeile">
+                <li class="text">Laborzeile</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="11-studieninformation">
+                <li class="text">Studieninformation</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="12-bro-und-handbibliothek">
+                <li class="text">Büro und Handbibliothek</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="13-koreanischer-kleiderkasten">
+                <li class="text">Koreanischer Kleiderkasten</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="14-geige">
+                <li class="text">Geige</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="15-drehtabernakel">
+                <li class="text">Drehtabernakel</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="16-truhe">
+                <li class="text">Truhe</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="17-aufsatzschrank">
+                <li class="text">Aufsatzschrank</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="18-laborzeile-eingang">
+                <li class="text">Laborzeile Eingang</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="19-eingang-seminarraum">
+                <li class="text">Eingang Seminarraum</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="20-fotosituation">
+                <li class="text">Fotosituation</li>
+            </a>
+
+        </ul>
+    </div>
+
+    <div id="titleBar">
+        <h1 class="sceneName"></h1>
+    </div>
+
+    <a href="javascript:void(0)" id="autorotateToggle">
+        <img class="icon off" src="img/play.png">
+        <img class="icon on" src="img/pause.png">
+    </a>
+
+    <a href="javascript:void(0)" id="fullscreenToggle">
+        <img class="icon off" src="img/fullscreen.png">
+        <img class="icon on" src="img/windowed.png">
+    </a>
+
+    <a href="javascript:void(0)" id="sceneListToggle">
+        <img class="icon off" src="img/expand.png">
+        <img class="icon on" src="img/collapse.png">
+    </a>
+
+    <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+        <img class="icon" src="img/up.png">
+    </a>
+    <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+        <img class="icon" src="img/down.png">
+    </a>
+    <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+        <img class="icon" src="img/left.png">
+    </a>
+    <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+        <img class="icon" src="img/right.png">
+    </a>
+    <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+        <img class="icon" src="img/plus.png">
+    </a>
+    <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+        <img class="icon" src="img/minus.png">
+    </a>
+
+    <script src="vendor/screenfull.min.js"></script>
+    <script src="vendor/bowser.min.js"></script>
+    <script src="vendor/marzipano.js"></script>
+
+    <script src="data1.js"></script>
+    <script src="index1.js"></script>
+
+</body>
+
+</html>

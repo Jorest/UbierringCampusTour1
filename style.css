@@ -272,7 +272,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #sceneList {
-    /*hide this later*/
+    /*hiding room selection*/
     display: none;
     visibility: hidden;
     position: absolute;
