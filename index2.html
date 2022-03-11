@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TAF_Rundgang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <style>
+        @-ms-viewport {
+            width: device-width;
+        }
+    </style>
+    <link rel="stylesheet" href="vendor/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="multiple-scenes ">
+
+    <div id="pano"></div>
+
+    <div id="sceneList">
+        <ul class="scenes">
+
+            <a href="javascript:void(0)" class="scene" data-id="0-flur_3">
+                <li class="text">Flur_3</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="1-flur_2_1">
+                <li class="text">Flur_2_1</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="2-flur_2_2">
+                <li class="text">Flur_2_2</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="3-flur_1">
+                <li class="text">Flur_1</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="4-03_1_labor_eingang_rein">
+                <li class="text">03_1_Labor_Eingang_rein</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="5-03_2_labor">
+                <li class="text">03_2_Labor</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="6-03_3_labor_eingang_raus">
+                <li class="text">03_3_Labor_Eingang_raus</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="7-04_1_computer_eingang_rein">
+                <li class="text">04_1_Computer_Eingang_rein</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="8-04_2_computer">
+                <li class="text">04_2_Computer</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="9-04_3_studenten">
+                <li class="text">04_3_Studenten</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="10-04_4_computer_eingang_raus">
+                <li class="text">04_4_Computer_Eingang_raus</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="11-05_1_nassraum_-eingang_rein">
+                <li class="text">05_1_Nassraum_ Eingang_rein</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="12-05_2_nassraum">
+                <li class="text">05_2_Nassraum</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="13-05_3_nassraum_feuchtekammer">
+                <li class="text">05_3_Nassraum_Feuchtekammer</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="14-05_4_nassraum-eingang_raus">
+                <li class="text">05_4_Nassraum Eingang_raus</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="15-06_1_eingang_mikroskopie_rein">
+                <li class="text">06_1_Eingang_Mikroskopie_rein</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="16-06_2_mikroskopieraum">
+                <li class="text">06_2_Mikroskopieraum</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="17-06_3_mikroskpie_arbeitsplatz">
+                <li class="text">06_3_Mikroskpie_Arbeitsplatz</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="18-06_4_eingang_mikroskopie_raus">
+                <li class="text">06_4_Eingang_Mikroskopie_raus</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="19-07_1_eingang_fotoraum">
+                <li class="text">07_1_Eingang_Fotoraum</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="20-07_2_fotoraum">
+                <li class="text">07_2_Fotoraum</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="21-07_3_eingang_fotoraum_raus">
+                <li class="text">07_3_Eingang_Fotoraum_raus</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="22-09_1_studenten_eingang_rein">
+                <li class="text">09_1_Studenten_Eingang_rein</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="23-09_2_studenten">
+                <li class="text">09_2_Studenten</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="24-09_3_studenten_eingang_raus">
+                <li class="text">09_3_Studenten_Eingang_raus</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="25-11_1_studenten_eingang_rein">
+                <li class="text">11_1_Studenten_Eingang_rein</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="26-11_2_studenten">
+                <li class="text">11_2_Studenten</li>
+            </a>
+
+            <a href="javascript:void(0)" class="scene" data-id="27-11_3_stundenten_eingang_raus">
+                <li class="text">11_3_Stundenten_Eingang_raus</li>
+            </a>
+
+        </ul>
+    </div>
+
+    <div id="titleBar">
+        <h1 class="sceneName"></h1>
+    </div>
+
+    <a href="javascript:void(0)" id="autorotateToggle">
+        <img class="icon off" src="img/play.png">
+        <img class="icon on" src="img/pause.png">
+    </a>
+
+    <a href="javascript:void(0)" id="fullscreenToggle">
+        <img class="icon off" src="img/fullscreen.png">
+        <img class="icon on" src="img/windowed.png">
+    </a>
+
+    <a href="javascript:void(0)" id="sceneListToggle">
+        <img class="icon off" src="img/expand.png">
+        <img class="icon on" src="img/collapse.png">
+    </a>
+
+    <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+        <img class="icon" src="img/up.png">
+    </a>
+    <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+        <img class="icon" src="img/down.png">
+    </a>
+    <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+        <img class="icon" src="img/left.png">
+    </a>
+    <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+        <img class="icon" src="img/right.png">
+    </a>
+    <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+        <img class="icon" src="img/plus.png">
+    </a>
+    <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+        <img class="icon" src="img/minus.png">
+    </a>
+
+    <script src="vendor/screenfull.min.js"></script>
+    <script src="vendor/bowser.min.js"></script>
+    <script src="vendor/marzipano.js"></script>
+
+    <script src="data2.js"></script>
+    <script src="index2.js"></script>
+
+</body>
+
+</html>
